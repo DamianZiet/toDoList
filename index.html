@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Zadan</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" type="text/css" href="/dist/css/style.min.css">
+</head>
+</body>
+<div class="container">
+</div>
+    <div class="yourTask">
+    <h1>Dodaj <span class="styling">Zadanie</span> </h1>
+    </div>
+    <div class="addTask">
+        <div class="input_div">
+            <input type="text" class="input" id="task"placeholder="Twoje zadanie"> 
+       
+            <input type="text" class="input" id="date" required pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="dd/mm/rrrr" >
+       
+            <input type="text" class="input" id="time" placeholder="Przybliżony czas realizacji ">
+       
+           
+        </div>
+        <div class="addButton_div">
+            <button class="addButton" id="addNewTask"><i class="fas fa-plus"></i></button>
+        </div>
+    </div>
+    <div class="listTask">
+        <h2>Lista <span class="styling">Zadan</span> </h2>
+    </div>
+    <div class="taskList">
+        <table class="tabela" id="table">
+            <thead>
+                <tr>
+                    <th>Id</th>  
+                    <th>Zadanie</th> 
+                    <th>Termin</th> 
+                    <th>Czas realizacji</th>
+                </tr> 
+            </thead>
+            <tbody id="bodyTable"></tbody> 
+
+        </table>
+    </div>
+    <div class="listDone">
+        <h2>Zadania <span class="styling">Wykonane</span> </h2>
+    </div>
+    <div class="taskListDone">
+        <table class="taskDone" id="taskDone">
+            <thead>
+                <tr>
+                    <th>Id</th>  
+                    <th>Zadanie</th> 
+                    <th>Termin</th> 
+                    <th>Czas realizacji</th>
+                </tr> 
+            </thead>
+            <tbody id="tableTaskDone">
+            </tbody>
+         </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
